@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_color"
+    android:gravity="center"
+    tools:context=".RegistrationActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="50dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Book Appointment"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textSize="30dp"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/DrTitle"
+                android:layout_width="match_parent"
+                android:text=""
+                android:gravity="center"
+                android:padding="20dp"
+                android:textSize="30dp"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"
+                android:hint="Full name"
+                android:layout_height="wrap_content"
+                android:id="@+id/fullname"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"
+                android:editable="false"
+                android:hint="Address"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"
+
+                android:hint="Contact Number"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"
+                android:hint="Fees"
+                android:layout_height="wrap_content"
+                android:id="@+id/fees"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:background="@drawable/edittext_background"
+                        android:padding="15dp"
+                        android:editable="false"
+                        android:hint="Select Date"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date"
+                        />
+                    <Button
+                        android:id="@+id/pickDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/edittext_background"
+                        android:text="11/03/2023"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/white" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="110dp"
+                    >
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:textColor="@android:color/white"
+                        android:textColorHint="@android:color/white"
+                        android:background="@drawable/edittext_background"
+                        android:padding="15dp"
+                        android:editable="false"
+                        android:hint="Select Time"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/SelectTime"
+                        />
+                    <Button
+                        android:id="@+id/Time"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:background="@drawable/edittext_background"
+                        android:text="8:20"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@android:color/white" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/Book"
+                android:layout_width="269dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edittext_background"
+                android:text="Book Appointment"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edittext_background"
+                android:text="Back"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

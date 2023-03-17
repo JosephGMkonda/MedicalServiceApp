@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_color"
+    android:gravity="center"
+    tools:context=".RegistrationActivity">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Mobile Hospital"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textSize="30dp"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"
+                android:hint="Username"
+                android:layout_height="wrap_content"
+                android:id="@+id/username_reg"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                android:hint="Password"
+                android:layout_height="wrap_content"
+                android:id="@+id/Password_reg"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/edittext_background"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                android:hint="Confirm Password"
+                android:layout_height="wrap_content"
+                android:id="@+id/ConfirmPassword_reg"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:text="Registration"
+                android:layout_margin="10dp"
+                android:background="@drawable/edittext_background"
+                android:textColor="@android:color/white"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:layout_height="wrap_content"
+                android:id="@+id/signupButton"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:text="Already have account? Sign in here."
+                android:id="@+id/sign_up"
+                android:padding="10dp"
+                />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
